@@ -1,4 +1,4 @@
-# Mobile Training(iOS)
+# Mobile Training: iOS
 
 ## Basic
 
