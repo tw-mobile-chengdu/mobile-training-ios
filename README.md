@@ -1,6 +1,30 @@
 # Mobile Training: iOS
 
-## Basic
+## Prerequisites
+
+- Xcode
+  - Download the Xcode 11 or above from App store or this link [https://developer.apple.com/download/more/](https://developer.apple.com/download/more/)
+  - Make sure you run Xcode after installing, it generally prompts to install additional components - do that too.
+  - You will need MacOS 10.14.3 or later (ie Mojave).
+- Cocoapods
+  - Install `rbenv`
+  - Install ruby via rbenv
+  ```
+  rbenv install 2.6.2
+  rbenv shell 2.6.2
+  rbenv rehash
+  ```
+  - Install Cocoapods via `gem install cocoapods`
+- Clone this repo 
+  - [https://github.com/tw-xian-consumer-mobile/mobile-training-ios.git](https://github.com/tw-xian-consumer-mobile/mobile-training-ios.git)
+
+## Sessions
+
+The Basic sessions are for beginner.
+The Advanced sessions ayre for people with experience.
+The Platform Practice sessions are one kind of Practice which worth us to learn about.
+
+### Basic
 
 | Topic | Comments |
 | :--- | :--- |
@@ -15,7 +39,7 @@
 | M09: Releasing | How we release the iOS App |
 | M10: Workshop | Content TBD... |
 
-## Advanced
+### Advanced
 
 | Topic | Comments |
 | :--- | :--- |
@@ -28,7 +52,7 @@
 | M06: UI Testing | Native Testing |
 | M07: Workshop | Wechat Moment |
 
-## Platform Practice
+### Platform Practice
 
 | Topic | Comments |
 | :--- | :--- |
