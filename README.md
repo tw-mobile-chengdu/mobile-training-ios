@@ -1,5 +1,7 @@
 # Mobile Training: iOS
 
+This is an iOS training for different stage of people. The goal is to let people can learn iOS Developer and working on the project ASAP.
+
 ## Prerequisites
 
 - Xcode
@@ -8,23 +10,32 @@
   - You will need MacOS 10.14.3 or later (ie Mojave).
 - Cocoapods
   - Install `rbenv`
-  - Install ruby via rbenv
+  ```sh
+  brew install rbenv
+  rbenv init
   ```
+  - Install ruby via rbenv
+  ```sh
   rbenv install 2.6.2
   rbenv shell 2.6.2
   rbenv rehash
   ```
-  - Install Cocoapods via `gem install cocoapods`
+  - Install Cocoapods via `gem install cocoapods`, then run `rbenv rehash`
+
+    ***Note:** Run `pod repo update` after you install the Cocoapods for this take a long time to update*
+
 - Clone this repo 
   - [https://github.com/tw-xian-consumer-mobile/mobile-training-ios.git](https://github.com/tw-xian-consumer-mobile/mobile-training-ios.git)
 
 ## Sessions
 
-The Basic sessions are for beginner.
-The Advanced sessions ayre for people with experience.
-The Platform Practice sessions are one kind of Practice which worth us to learn about.
+![#2d5df0][#2d5df0]&nbsp;&nbsp;The `Basic` sessions are for beginner.
 
-### Basic
+![#f4d26c][#f4d26c]&nbsp;&nbsp;The `Advanced` sessions ayre for people with experience.
+
+![#f03d3d][#f03d3d]&nbsp;&nbsp;The `Platform Practice` sessions are one kind of Practice which worth us to learn about.
+
+### ![#2d5df0][#2d5df0] Basic
 
 | Topic | Comments |
 | :--- | :--- |
@@ -39,12 +50,12 @@ The Platform Practice sessions are one kind of Practice which worth us to learn 
 | M09: Releasing | How we release the iOS App |
 | M10: Workshop | Content TBD... |
 
-### Advanced
+### ![#f4d26c][#f4d26c] Advanced
 
 | Topic | Comments |
 | :--- | :--- |
 | M01: Functional Swift | Functional Programming in Swift |
-| M02: UICollectionView |  |
+| M02: UICollectionView | ImagePicker |
 | M03: Dynamic Content List | Long List with self sizing list item |
 | M03: Database | Sqlite, CoreData, Realm |
 | M04: Continuous Integration | BuddyBuild, Jenkins |
@@ -52,14 +63,24 @@ The Platform Practice sessions are one kind of Practice which worth us to learn 
 | M06: UI Testing | Native Testing |
 | M07: Workshop | Wechat Moment |
 
-### Platform Practice
+### ![#f05f2d][#f03d3d] Platform Practice
 
 | Topic | Comments |
 | :--- | :--- |
-| M01: Platform&Federated Delivery |  |
-| M02: BFF&ViewModel |  |
-| M03: Protobuf |  |
-| M04: UniversalList |  |
-| M05: NDS |  |
-| M06: Weekly Release |  |
-| M07: Workshop |  |
+| M01: Platform&Federated Delivery | The team is separated into a few of federated Team and all working on a platform project |
+| M02: BFF&ViewModel | BFF server returns the ViewModel and control the content of the App |
+| M03: Protobuf | Protocol Buffers is a method of serializing structured data |
+| M04: UniversalList | The list contains dynamic content from BFF |
+| M05: NDS | Design System |
+| M06: Weekly Release | Release every week |
+| M07: Workshop | Try federated delivery process |
+
+<!--Parameters-->
+<!--Blue-->
+[#2d5df0]: https://placehold.it/15/2d5df0/000000?text=+
+<!--Red-->
+[#f03d3d]: https://placehold.it/15/f03d3d/000000?text=+
+<!--Yellow-->
+[#f4d26c]: https://placehold.it/15/f4d26c/000000?text=+
+
+[Haha]: 1234566nmxcnvijdsaf
