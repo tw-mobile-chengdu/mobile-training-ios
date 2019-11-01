@@ -54,14 +54,15 @@ This is an iOS training for different stage of people. The goal is to let people
 
 | Topic | Comments |
 | :--- | :--- |
-| M01: Functional Swift | Functional Programming in Swift |
-| M02: UICollectionView | ImagePicker |
-| M03: Dynamic Content List | Long List with self sizing list item |
-| M03: Database | Sqlite, CoreData, Realm |
-| M04: Continuous Integration | BuddyBuild, Jenkins |
-| M05: Data Tracking | What, Why, When, How |
-| M06: UI Testing | Native Testing |
-| M07: Workshop | Wechat Moment |
+| M01: App Architecture | MVC, MVVM, VIPER, Clean Swift |
+| M02: Functional Swift | Functional Programming in Swift |
+| M03: UICollectionView | ImagePicker |
+| M04: Dynamic Content List | Long List with self sizing list item |
+| M05: Database | Sqlite, CoreData, Realm |
+| M06: Continuous Integration | BuddyBuild, Jenkins |
+| M07: Data Tracking | What, Why, When, How |
+| M08: UI Testing | Native Testing |
+| M09: Workshop | Wechat Moment |
 
 ### ![#f05f2d][#f03d3d] Platform Practice
 
