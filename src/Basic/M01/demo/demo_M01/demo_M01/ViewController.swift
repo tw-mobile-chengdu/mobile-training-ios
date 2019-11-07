@@ -9,12 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+  @IBOutlet weak var helloLabel: UILabel!
+  @IBOutlet weak var nameTextField: UITextField!
+  @IBOutlet weak var helloButton: UIButton!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
   }
 
-
+  @IBAction func didTapSayHelloButton(_ sender: UIButton) {
+    helloLabel.text = "Hello, \(nameTextField.text ?? "World")!"
+  }
 }
 
