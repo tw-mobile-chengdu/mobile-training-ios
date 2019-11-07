@@ -25,6 +25,7 @@ This is an iOS training for different stage of people. The goal is to let people
     ***Note:** Run `pod repo update` after you install the Cocoapods for this take a long time to update*
 
 - Clone this repo 
+  
   - [https://github.com/tw-xian-consumer-mobile/mobile-training-ios.git](https://github.com/tw-xian-consumer-mobile/mobile-training-ios.git)
 
 ## Sessions
@@ -40,7 +41,7 @@ This is an iOS training for different stage of people. The goal is to let people
 | Topic | Comments |
 | :--- | :--- |
 | [M01: Intro to Xcode](./src/Basic/M01) | Basic Usage of the iOS IDE |
-| M02: Intro to Swift | Basic knowledge of the iOS programming language |
+| [M02: Intro to Swift](./src/Basic/M02) | Basic knowledge of the iOS programming language |
 | M03: Intro to UIKit | View, Label, Button, Image, TextField |
 | M04: Layout | Frame, Autoresizing, AutoLayout |
 | M05: Debugging | Breakpoints, Logs |
