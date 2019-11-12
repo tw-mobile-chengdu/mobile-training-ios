@@ -16,7 +16,7 @@ Apple provides a sample application that showcases some of the commonly used UIK
 
 In the UIKit catalog, we will see some commonly UI components, we don't need to coding every components in there for now, but we need to know what thing a component could do.
 
-<img src="./images/uikit-catalog.png" />
+<img src="./images/uikit-catalog.png" width=400 />
 
 ### The lifecycle of `UIViewController`
 View controllers go through many stages over their lifetime, and we may need to respond to some of them. View controller will automatically call its own functions when a lifecycle event occurs so that subclasses override the methods to react to changes.
@@ -74,3 +74,8 @@ Commonly used gestures:
 The demo has implement `Tap` as an example, we will practice the left gestures in the demo.
 
 <img src="./images/gesture.gif" width=400 />
+
+## Further reading
+
+[View Controller Programming Guide for iOS](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html)
+[Using Responders and the Responder Chain to Handle Events](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events)
