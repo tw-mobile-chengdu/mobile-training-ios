@@ -43,7 +43,7 @@ This is an iOS training for different stage of people. The goal is to let people
 | [M01: Intro to Xcode](./src/Basic/M01) | Basic Usage of the iOS IDE |
 | [M02: Intro to Swift](./src/Basic/M02) | Basic knowledge of the iOS programming language |
 | [M03: Intro to UIKit](./src/Basic/M03) | View, Label, Button, Image, TextField |
-| M04: Layout | Frame, Autoresizing, AutoLayout |
+| [M04: Layout](./src/Basic/M04) | Frame, Autoresizing, AutoLayout |
 | M05: Debugging | Breakpoints, Logs |
 | M06: UITableView | How to implement a long list in iOS |
 | M07: Networking | Basic knowledge of sending a request to server |
