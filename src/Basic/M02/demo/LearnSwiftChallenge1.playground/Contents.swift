@@ -17,4 +17,9 @@ let array1 = ["dog", "cat", "bird", "pig"]
 let array2 = ["turtle", "snake", "lizard", "shark"]
 
 // Write your function below:
+func findMyPet(name: String) -> Bool {
+  return (array1 + array2).contains(name)
+}
 
+findMyPet(name: "cat")
+findMyPet(name: "cow")
