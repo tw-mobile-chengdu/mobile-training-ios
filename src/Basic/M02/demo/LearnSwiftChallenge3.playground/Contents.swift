@@ -49,8 +49,30 @@ class Library {
         // Returns "Checked out by name" if the book exists and is checked out
         //
         // Returns "Not in catalogue" if the book doesn't exist
-        
-        return ""
+
+
+      for (bookId, book) in catalogue {
+        if title == book.title {
+          for (recordKey, person) in checkedOutBooks {
+            if let name = person.name, bookId == recordKey {
+              return "Checked out by \(name)"
+            }
+          }
+          return "Available"
+        }
+      }
+
+      return "Not in catalogue"
+
+//      let bookItem = catalogue.filter{ $0.value.title == title }.first
+//      guard let book = bookItem else { return "Not in catalogue" }
+//
+//      let recordItem = checkedOutBooks.filter{ $0.key == book.key }.first
+//      if let record = recordItem, let name = record.value.name {
+//        return "Checked out by \(name)"
+//      } else {
+//        return "Available"
+//      }
     }
     
     func checkOut(_ bookId:String, _ person:Person) -> String {
@@ -62,8 +84,17 @@ class Library {
         // Returns "Successfully checked out" and adds the bookId,person key-value pair if the book doesn't currently exist in the checkedOutbooks dictionary
         //
         // Returns "Book doesn't exist" if the book isn't in the catalogue dictionary
-        
-        return ""
+
+      guard catalogue.keys.contains(bookId) else {
+        return "Book doesn't exist"
+      }
+
+      if checkedOutBooks.keys.contains(bookId) {
+        return "Error: Book already checked out"
+      } else {
+        checkedOutBooks[bookId] = person
+        return "Successfully checked out"
+      }
     }
     
     func checkIn(_ bookId:String) -> String {
@@ -75,10 +106,16 @@ class Library {
         // Returns "Error: Can't check in a book that hasn't been checked out" if the book wasn't checked out in the first place
         //
         // Returns "Successfully checked in"
-        
-        
-        
-        return ""
+      guard catalogue.keys.contains(bookId) else {
+        return "Book doesn't exist"
+      }
+
+      if checkedOutBooks.keys.contains(bookId) {
+        checkedOutBooks.removeValue(forKey: bookId)
+        return "Successfully checked in"
+      } else {
+        return "Error: Can't check in a book that hasn't been checked out"
+      }
     }
     
 }
