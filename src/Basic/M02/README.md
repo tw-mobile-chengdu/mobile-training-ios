@@ -21,10 +21,10 @@ If you want to write code ASAP instead of reading the looooong doc first, starti
 3. [Challenge Three](./demo/LearnSwiftChallenge3.playground)
 
    If you need help, FYI:  [Dictionaries](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID113) and [Control Flow](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html)
+   
+4. [Challenge Four](./demo/LearnSwiftChallenge4.playground)
 
-
-
-
+   
 
 ## Congratulations!
 
