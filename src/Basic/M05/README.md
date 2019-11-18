@@ -29,7 +29,15 @@ When you are fixing the layout issue. You can use the integrated tools in Xcode,
 
 <img src="./images/04-debug-view-hierarchy.png" width=300 />
 
-Then you should see the view hierarchy like following image
+Then you should see the view hierarchy like following image, and then you can see the detail of the page hierarhcy.
+
+<img src="./images/06-debug-view-hierarchy-2.png" width=700 />
+
+## Memory Graph
+
+The last tool is the memory graph, this is a tool to debug the memory usage and retain cycle. And it looks like the following image.
+
+<img src="./images/07-debug-memory-graph.png" width=1000 />
 
 ## Reference
 

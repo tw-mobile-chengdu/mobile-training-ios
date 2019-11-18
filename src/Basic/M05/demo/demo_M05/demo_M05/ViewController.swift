@@ -11,23 +11,34 @@ import UIKit
 class ViewController: UIViewController {
   @IBOutlet weak var containerView: UIView!
   @IBOutlet weak var titleLabel: UILabel!
-  @IBOutlet weak var contentLabel: UIView!
+  @IBOutlet weak var contentLabel: UILabel!
   @IBOutlet weak var imageContentView: UIView!
 
-  lazy var viewModel = {
-    ViewModel(view: self)
-  }
+  var viewModel: ViewModel!
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    viewModel = ViewModel(updateView: {
+      self.containerView.backgroundColor = .systemBlue
+      self.doSomething()
+    })
+    viewModel.update()
+  }
+
+  func doSomething() {
+    contentLabel.text = ""
   }
 }
 
 class ViewModel {
-  let view: ViewController
+  let updateView: () -> Void
 
-  init(view: ViewController) {
-    self.view = view
+  init(updateView: @escaping () -> Void) {
+    self.updateView = updateView
+  }
+
+  func update() {
+    self.updateView()
   }
 }
 
