@@ -14,8 +14,20 @@ class ViewController: UIViewController {
   @IBOutlet weak var contentLabel: UIView!
   @IBOutlet weak var imageContentView: UIView!
 
+  lazy var viewModel = {
+    ViewModel(view: self)
+  }
+
   override func viewDidLoad() {
     super.viewDidLoad()
+  }
+}
+
+class ViewModel {
+  let view: ViewController
+
+  init(view: ViewController) {
+    self.view = view
   }
 }
 
