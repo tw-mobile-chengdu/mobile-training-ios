@@ -44,7 +44,7 @@ This is an iOS training for different stage of people. The goal is to let people
 | [M02: Intro to Swift](./src/Basic/M02) | Basic knowledge of the iOS programming language |
 | [M03: Intro to UIKit](./src/Basic/M03) | View, Label, Button, Image, TextField |
 | [M04: Layout](./src/Basic/M04) | Frame, Autoresizing, AutoLayout |
-| M05: Debugging | Breakpoints, Logs |
+| [M05: Debugging](./src/Basic/M05) | Breakpoints, Logs |
 | M06: UITableView | How to implement a long list in iOS |
 | M07: Networking | Basic knowledge of sending a request to server |
 | M08: Unit Testing | Basic knowledge testing and how to write a unit test in iOS |
