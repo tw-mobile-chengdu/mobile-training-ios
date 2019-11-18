@@ -26,7 +26,6 @@ class ViewController: UIViewController {
   }
 
   func doSomething() {
-    contentLabel.text = ""
   }
 }
 
