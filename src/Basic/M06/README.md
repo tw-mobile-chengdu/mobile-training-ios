@@ -31,12 +31,12 @@ Rows are displayed in groups that have rounded corners and are inset from the ed
 UITableViewDataSource protocol has two important methods that we **MUST** implement to populate data on the contactsTableView, they are *numberOfRowsInTableView* and *cellForRowAtIndexPath*.
 
 ### Exercise
-- 1. Complete the TODO For exercise1 in `ContactsViewController` 
+1. Complete the TODO For exercise1 in `ContactsViewController` 
 <img src="./images/contact.png" width=200 />
 
-- 2. Implement the `DevicesViewController`
+2. Implement the `DevicesViewController`
  Acceptance criteria:
     - has a header view above first `Android` or `iOS` device. the header view contains a label, the label text will be the platform name.
     - display name, system and available status in each device cell.
-- 3. Reuse mechanism and load optimization of UITableView
+3. Reuse mechanism and load optimization of UITableView
 Complete the TODO For exercise3 in `ContactsViewController`, what you have found? how to fix it?
