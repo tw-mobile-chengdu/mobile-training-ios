@@ -9,12 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+  @IBOutlet weak var displayLabel: UILabel!
+  @IBOutlet weak var numberInputField: UITextField!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
   }
 
 
+  @IBAction func didTapSpellOutButton(_ sender: Any) {
+    displayLabel.text = NumberNameSpeller.numberName(of: Int(numberInputField.text ?? "") ?? 0)
+  }
 }
 
