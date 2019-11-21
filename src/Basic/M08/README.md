@@ -86,6 +86,8 @@ Finish the function called `func numberName(of: Int) -> String` with tests to co
 
 Using the demo repo ([./demo/demo_M08](./demo/demo_M08)), the basic UI has been built, all you need to do you copy the demo app to any position in your laptop and finish the function in struct called `NumberNameSpeller`.
 
+*Run `pod install` before you start and make sure you are opening the demo_M08.xcworkspace rather than demo_M08.xcodeproj*
+
 ## References and reading
 
 Documentation
