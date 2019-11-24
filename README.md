@@ -34,8 +34,6 @@ This is an iOS training for different stage of people. The goal is to let people
 
 ![#f4d26c][#f4d26c]&nbsp;&nbsp;The `Advanced` sessions ayre for people with experience.
 
-![#f03d3d][#f03d3d]&nbsp;&nbsp;The `Platform Practice` sessions are one kind of Practice which worth us to learn about.
-
 ### ![#2d5df0][#2d5df0] Basic
 
 | Topic | Comments |
@@ -65,24 +63,8 @@ This is an iOS training for different stage of people. The goal is to let people
 | M08: UI Testing | Native Testing |
 | M09: Workshop | Wechat Moment |
 
-### ![#f05f2d][#f03d3d] Platform Practice
-
-| Topic | Comments |
-| :--- | :--- |
-| M01: Platform&Federated Delivery | The team is separated into a few of federated Team and all working on a platform project |
-| M02: BFF&ViewModel | BFF server returns the ViewModel and control the content of the App |
-| M03: Protobuf | Protocol Buffers is a method of serializing structured data |
-| M04: UniversalList | The list contains dynamic content from BFF |
-| M05: NDS | Design System |
-| M06: Weekly Release | Release every week |
-| M07: Workshop | Try federated delivery process |
-
 <!--Parameters-->
 <!--Blue-->
 [#2d5df0]: https://placehold.it/15/2d5df0/000000?text=+
-<!--Red-->
-[#f03d3d]: https://placehold.it/15/f03d3d/000000?text=+
 <!--Yellow-->
 [#f4d26c]: https://placehold.it/15/f4d26c/000000?text=+
-
-[Haha]: 1234566nmxcnvijdsaf
