@@ -46,7 +46,7 @@ This is an iOS training for different stage of people. The goal is to let people
 | [M06: UITableView](./src/Basic/M06) | How to implement a long list in iOS |
 | [M07: Networking](./src/Basic/M07) | Basic knowledge of sending a request to server |
 | [M08: Unit Testing](./src/Basic/M08) | Basic knowledge testing and how to write a unit test in iOS |
-| M09: Releasing | How we release the iOS App |
+| [M09: Releasing](./src/Basic/M09) | How we release the iOS App |
 | [M10: Workshop](./src/Basic/M10_FinalTest) | POS App |
 
 ### ![#f4d26c][#f4d26c] Advanced
