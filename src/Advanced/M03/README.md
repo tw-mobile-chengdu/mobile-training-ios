@@ -1,5 +1,5 @@
 # UICollectionView
-We have learned [UITableView](./src/Basic/M06), as we know, UITableView can display a single-column list data. Then how to display a multiple-columns list data. Yep, UICollectionView can do it.
+We have learned [UITableView](../../Basic/M06), as we know, UITableView can display a single-column list data. Then how to display a multiple-columns list data. Yep, UICollectionView can do it.
 UICollectionView is an object that manages an ordered collection of data items and presents them using customizable layouts.
 
 ## Anatomy of a UICollectionView
