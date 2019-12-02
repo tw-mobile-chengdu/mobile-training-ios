@@ -10,11 +10,11 @@ import Foundation
 import Alamofire
 
 struct NetworkClient {
-  func request(url: URL, completion: @escaping ([String: Any]?, Error?) -> Void) {
+  func request(url: URL, completion: @escaping (Any?, Error?) -> Void) {
     Alamofire.request(url).validate().responseJSON { dataResponse in
       switch dataResponse.result {
       case let .success(json):
-        completion(json as? [String: Any], nil)
+        completion(json, nil)
       case let .failure(error):
         completion(nil, error)
       }

@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
   @IBOutlet weak var tableView: UITableView!
 
+  private let networkClient: NetworkClient = .init()
+
   override func viewDidLoad() {
     super.viewDidLoad()
   }
