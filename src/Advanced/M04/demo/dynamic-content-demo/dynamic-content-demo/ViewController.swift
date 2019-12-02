@@ -1,0 +1,20 @@
+//
+//  ViewController.swift
+//  dynamic-content-demo
+//
+//  Created by Xin Guo on 2019/12/3.
+//  Copyright © 2019 personal.emagrorrim. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+  }
+
+
+}
+
