@@ -15,7 +15,13 @@ Before learning the dynamic sizing list, you need to know how to create a tablev
 
 A few steps to build your dynamic content UITableView
 
-1. Set the `estimatedRowHeight` of the `UITableView`, to the value called 
+1. Set the `estimatedRowHeight` of the `UITableView`, to the value called. This size should be close to your cell's average height, but if your cell's height is really different or you can not measure the height of the cell, you can use the following value:
+
+```swift
+tableView.estimatedRowHeight = UITableView.automaticDimension
+```
+
+2. Your cell should be expanded by its content (Using autolayout)
 
 ## Exercise: Wechat Moment
 
