@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3604BA0AD083F79BDF7E6651 /* Pods_dynamic_content_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8516F6165F9EC326B39B07D9 /* Pods_dynamic_content_demo.framework */; };
+		7C4406462395853B00EDFD7F /* SingleLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4406452395853B00EDFD7F /* SingleLabelCell.swift */; };
+		7C4406482395857500EDFD7F /* SingleLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C4406472395857500EDFD7F /* SingleLabelCell.xib */; };
 		7C9A9738239572230044EEE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9A9737239572230044EEE0 /* AppDelegate.swift */; };
 		7C9A973A239572230044EEE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9A9739239572230044EEE0 /* SceneDelegate.swift */; };
 		7C9A973C239572230044EEE0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9A973B239572230044EEE0 /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		4237C98B4C62E1FE32E119DF /* Pods-dynamic-content-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dynamic-content-demo.debug.xcconfig"; path = "Target Support Files/Pods-dynamic-content-demo/Pods-dynamic-content-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		4B037988B8C9090AC9797897 /* Pods-dynamic-content-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dynamic-content-demo.release.xcconfig"; path = "Target Support Files/Pods-dynamic-content-demo/Pods-dynamic-content-demo.release.xcconfig"; sourceTree = "<group>"; };
+		7C4406452395853B00EDFD7F /* SingleLabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleLabelCell.swift; sourceTree = "<group>"; };
+		7C4406472395857500EDFD7F /* SingleLabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleLabelCell.xib; sourceTree = "<group>"; };
 		7C9A9734239572230044EEE0 /* dynamic-content-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dynamic-content-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9A9737239572230044EEE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C9A9739239572230044EEE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		7C9A974B239573310044EEE0 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				7C4406452395853B00EDFD7F /* SingleLabelCell.swift */,
+				7C4406472395857500EDFD7F /* SingleLabelCell.xib */,
 				7C9A9737239572230044EEE0 /* AppDelegate.swift */,
 				7C9A9739239572230044EEE0 /* SceneDelegate.swift */,
 				7C9A973D239572230044EEE0 /* Main.storyboard */,
@@ -110,7 +116,6 @@
 				4237C98B4C62E1FE32E119DF /* Pods-dynamic-content-demo.debug.xcconfig */,
 				4B037988B8C9090AC9797897 /* Pods-dynamic-content-demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -176,6 +181,7 @@
 			files = (
 				7C9A9744239572260044EEE0 /* LaunchScreen.storyboard in Resources */,
 				7C9A9741239572260044EEE0 /* Assets.xcassets in Resources */,
+				7C4406482395857500EDFD7F /* SingleLabelCell.xib in Resources */,
 				7C9A973F239572230044EEE0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C9A973C239572230044EEE0 /* ViewController.swift in Sources */,
+				7C4406462395853B00EDFD7F /* SingleLabelCell.swift in Sources */,
 				7C9A9750239573820044EEE0 /* UIImageView+Networking.swift in Sources */,
 				7C9A9738239572230044EEE0 /* AppDelegate.swift in Sources */,
 				7C9A973A239572230044EEE0 /* SceneDelegate.swift in Sources */,

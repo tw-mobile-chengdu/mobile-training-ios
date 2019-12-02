@@ -23,6 +23,10 @@ tableView.estimatedRowHeight = UITableView.automaticDimension
 
 2. Your cell should be expanded by its content (Using autolayout)
 
+3. No need to configure the row height in UITableViewDelegate's method
+
+Talk is cheap, let's move to the code.
+
 ## Exercise: Wechat Moment
 
 The following URL is for the list of wechat data. We need to make it displayed as a dynamic content list as following:
