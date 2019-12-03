@@ -39,6 +39,8 @@ Screenshot:
 
 We don't need you to write the list point by point, but we should try make it looks simular to the above mockup. So here are the `functional requirements`.
 
+### Basic Requirements
+
 - The data in the moments.json, we can see they all contains some of the data. At least they should have username(Using nick name) and avatar in `sender`. We should just show what the json model contains. (eg. if the item only contains images and sender, the cell should looks like the row 2 and row 4, and if it only has text content, it should looks like the row 3.)
 - We only show 3 images at most (contained in one line).
 - We need to show the full text content.
@@ -46,3 +48,10 @@ We don't need you to write the list point by point, but we should try make it lo
 - Ignore the comments field, it is for later sessions.
 
 *The demo project already contains some code to help you fetch data from network and also it already has configuring network image api built.*
+
+### Advanced Requirements
+
+- Show all the images rather than just show 3 and make it looks like the wechat App. (Using collection view to display 9 grid images)
+- Filter all the data without content and images.
+- Show comments
+- Add comment (No need push the new comment to server)
