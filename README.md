@@ -56,7 +56,7 @@ This is an iOS training for different stage of people. The goal is to let people
 | [M01: App Architecture](./src/Advanced/M01) | MVC, MVVM, VIPER, Clean Swift |
 | M02: Functional Swift | Functional Programming in Swift |
 | [M03: UICollectionView](./src/Advanced/M03) | ImagePicker |
-| M04: Dynamic Content List | Long List with self sizing list item |
+| [M04: Dynamic Content List](./src/Advanced/M04) | Long List with self sizing list item |
 | M05: Database | Sqlite, CoreData, Realm |
 | M06: Continuous Integration | BuddyBuild, Jenkins |
 | M07: Data Tracking | What, Why, When, How |
