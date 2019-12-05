@@ -34,6 +34,6 @@ Requirements:
 
 - Fetch data from server at first time the app installed and write them to database, then use and operate data through database
 - Data persistence, include goods in shopping cart that doesn't been settled
-- User can add goods
 - User can edit goods price
 - User can delete goods
+- User can add goods (Optional)
