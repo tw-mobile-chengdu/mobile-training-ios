@@ -2,54 +2,14 @@
 
 The Xcode provide everything you need to develop an iOS application.
 
-In this session, we will walk through a demo project in `./demo` to learn basic usage.
+In this session, We will understand the basic operation of xcode together.
 
-## Walking through the Xcode
-
-### Run the demo app
-
-- Download Xcode from App Store
-- Open the demo project from this repo
-
-```sh
-cd M01/demo
-open . # then right click on the .xcodeproj file to load with a specific version of Xcode
-```
-<!-- *NOTE: make sure you open the workspace file, not the project file* -->
-
-- Build and run the app from Xcode
-- Features of the app, seen in the simulator:
-
-### The anatomy of an app
-- an app is a bundle of compiled code (usually Swift), images and other resources
-  - zipped up and deployed through the app store
-- these bundles are represented by a target in Xcode
-
-### Project structure
-
-- Project Targets - App, Unit Tests and UI Tests targets
-- Folder structure - App, Unit Tests and UI Tests
-- Schemes - a way to compile and run a target
-- Run the app vs running the tests
-
-### App lifecycle
-- Breakpoints: Breakpoints and Check the stack trace in Xcode
-- AppDelegate: Centre point for the app lifecycle
-- UIViewController: Represents part of a screen
-
-### More Xcode features
-* Navigators (left panel) - different views on the your project, like files, issues, tests, breakpoints
-* Inspectors (right panel): File Inspector, Help Inspector, more on Interface Builder session.
-* Output (bottom panel) - see debug output and the actual debugger
-
-<img src="./images/00-xcode-panels.png" width=700 />
-
-## Exercise: create a new project
+## Create a new project
 
 ### Getting started with a new project
 
-* In Xcode, choose `File > New > Project`
-* Create a Single View Application, as show below
+* Open Xcode, choose `Create a new Xcode project`
+* Create a Single View App, as show below
 * Give the project a name, organisation and check the unit tests box (more on this in another session)
 
 <img src="./images/01-xcode-create-project.png" width=700 />
@@ -64,6 +24,41 @@ open . # then right click on the .xcodeproj file to load with a specific version
 
 Then you should see simulator started and show a blank screen.
 
+### The anatomy of an app
+
+- an app is a bundle of compiled code (usually Swift), images and other resources
+  - zipped up and deployed through the app store
+- these bundles are represented by a target in Xcode
+
+### Project structure
+
+- Project Targets - App, Unit Tests, UI Tests targets and Products
+- Folder structure - App, Unit Tests and UI Tests
+- Schemes - a way to compile and run a target
+- Run the app vs running the tests
+
+<img src="./images/11-xcode-structure.png" width=700 />
+
+### App lifecycle
+
+- Breakpoints: Breakpoints and Check the stack trace in Xcode
+- AppDelegate: Centre point for the app lifecycle
+- UIViewController: Represents part of a screen
+
+> UIViewController will appear frequently in your project, please pay attention to the life cycle of UIViewController
+
+### More Xcode features
+
+* Navigators (left panel) - different views on the your project, like files, issues, tests, breakpoints
+* Inspectors (right panel): File Inspector, Help Inspector, more on Interface Builder session.
+* Output (bottom panel) - see debug output and the actual debugger
+
+<img src="./images/00-xcode-panels.png" width=700 /><br />
+
+> __Tips: Learn more about usage of Xcode. Click [here](https://help.apple.com/xcode/mac/current/#/devc8c2a6be1)__
+
+
+
 ### Interface Builder (IB)
 
 - Apps by default are set up to use visual storyboards and interface builder files to construct the UI:
@@ -73,7 +68,7 @@ Then you should see simulator started and show a blank screen.
   - `IBOutlet`: a marker that can bind a view element in IB to a variable in your code
   - `IBAction`: a marker that can bind an action (eg. button tap) from IB to the a function in your code that executes
 
-## Exercise: helloworld project
+## Exercise: Helloworld project
 
 ### Add some elements on to the screen
 
