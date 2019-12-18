@@ -98,17 +98,15 @@ There are a lot of mock server library, e.g. [mountbank](http://www.mbtest.org/)
 
 ## Add MVVM Architecture
 
-When build the real application, we can't put every code into one activity class, so we need add the design pattern in our project.
+When build the real application, we can't put every code into ViewController class, so we need add the design pattern in our project.
 
-* [Android Architecture Samples](https://github.com/android/architecture-samples)
-  * Switch the branch to "todo-mvp-kotlin".
-  * Other branch show up others android architecture pattern
-* [Model–view–presenter](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter)
+* [iOS Architecture Samples](https://github.com/tailec/ios-architecture)
+* [Model–view–presenter](https://en.wikipedia.org/wiki/Model–view–viewmodel)
 
-Add BaseView.kt and BasePersenter.kt in package `com.thoughtworks.miniweibo`
+<!-- Add BaseView.kt and BasePersenter.kt in package `com.thoughtworks.miniweibo`
 And also refactor the MainActivity to:
 
-<img src="./images/04-mvp.png" width=300 />
+<img src="./images/04-mvp.png" width=300 /> -->
 
 ## Add 3rd Libraries
 
