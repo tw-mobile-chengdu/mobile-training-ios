@@ -6,12 +6,11 @@ In this session, we will learn about:
 
 - The iOS system structure
 - Walking through the UIKit Catalog
-- The lifecycle of `UIViewController`
-- Navigation
 - Commonly used components
-- Using `UIGestureRecognizer` to interact with content
+- `delegate`, `SEL` & `closure`
+- `runtime`, `KVO`, `KVC`
 
-### The iOS system structure
+## The iOS system structure
 
 The iOS system architecture is divided into four levels:
 
@@ -38,8 +37,6 @@ Access some iOS services through the Core Service layer.Contains `Core Graphics`
 
 Core OS is the lowest layer in the iOS system architecture. It includes memory management, file system, power management, and some other operating system tasks. It can directly interact with hardware devices. _As an app developer, you don't need to deal with this layer._ Contains several frameworks such as `Accelerate Framework`, `External Accessory Framework`, `Security Framework`, and `System`, which are basically interfaces based on the `C language`
 
-
-
 ### Walking through the UIKit Catalog
 
 Apple provides a sample application that showcases some of the commonly used UIKit views and controls. 
@@ -49,7 +46,8 @@ In the UIKit catalog, we will see some commonly UI components, we don't need to 
 
 <img src="./images/uikit-catalog.png" width=400 />
 
-### The lifecycle of `UIViewController`
+#### The lifecycle of `UIViewController`
+
 View controllers go through many stages over their lifetime, and we may need to respond to some of them. View controller will automatically call its own functions when a lifecycle event occurs so that subclasses override the methods to react to changes.
 
 <img src="./images/viewcontroller-lifecycle.png" width=400 />
@@ -66,45 +64,63 @@ View controllers go through many stages over their lifetime, and we may need to 
     - What is the order of printed events?
     - Is there a relationship between events?
 
-
-
 <img src="./images/lifecycle.gif" width=700 />
 
-### Navigation
-The most common navigation patterns in iOS are：
-
-- Modally present and
-- Stack-based push and
-
-we will practice it in demo, after you finishe to TODOs, think about:
-- After you present `GreenViewController` in demo, when click `Foward to red` button, why red view controller is presented, not pushed ?
-- What is `UINavigationController`?
-
-<img src="./images/navigation.gif" width=400 />
-
-### Most commonly used components
+## Most commonly used components
 
 - UIView
 - UIButton
 - UILabel
 - UITextField
 - UIImageView
-- ..
+- UINavigationController
+- UITabBarController
+
+ ...
+
+#### UINavigationController
+
+The most common navigation patterns in iOS are：
+
+- Modally present and
+ 
+    ```
+    // UIViewController
+    func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil)
+    ```
+
+- Stack-based push and
+
+    ```
+    // UINavigationController
+    func pushViewController(_ viewController: UIViewController, animated: Bool)
+
+    func popViewController(animated: Bool) -> UIViewController?
+
+    func popToViewController(_ viewController: UIViewController, animated: Bool) -> [UIViewController]?
+
+    func popToRootViewController(animated: Bool) -> [UIViewController]?
+
+    ```
+
+we will practice it in demo, after you finishe to TODOs, think about:
+
+- After you present `GreenViewController` in demo, when click `Foward to red` button, why red view controller is presented, not pushed ?
+- What is `UINavigationController`?
+
+<img src="./images/navigation.gif" width=400 />
 
 The demo has implement `UIView` as an example, we will practice the left components in the demo.
 
-### Using `UIGestureRecognizer` to interact with content
-Commonly used gestures:
-- Tap
-- Pan
-- Swipe
-- Pinch
-- Rotation
-- Long Press
+### delegate, SEL & closure
 
-The demo has implement `Tap` as an example, we will practice the left gestures in the demo.
+...
 
-<img src="./images/gesture.gif" width=400 />
+### runtime, KVO & KVC
+
+Objective-C is a dynamic language, which means it needs not only a compiler, but also a runtime system to dynamically create classes and objects, deliver messages and forward them. Understanding the runtime mechanism of Objective-C can help us better understand the language, and extend the language when appropriate, so as to solve some design or technical problems in the project from the system level.
+
+<img src="./images/runtime.png" width=400 />
 
 ## Further reading
 

@@ -1,61 +1,139 @@
-# Auto Layout
+# Weibo Workshop Preparation
 
-## 1. Understanding Auto Layout
+## Story
 
-Why we need to use auto layout? What's the difference between auto layout and other layout approaches?
+#### Context
 
-Find the answer at [Here](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853-CH7-SW1)
+When we start a new project, most of time we will create Iteration 0 to setup the project structure.
 
-## 2. Auto Layout Attributes
+#### Scope
 
-In Auto Layout, the attributes define a feature that can be constrained. In general, this includes the four edges (leading, trailing, top, and bottom), as well as the height, width, and vertical and horizontal centers. Text items also have one or more baseline attributes.
+* Project init
+* Mock server setup
+* Add 3rd Library
 
-![](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/Art/attributes_2x.png)
+#### Acceptance Criteria
 
-## 3. Anatomy of a Constraint
+| Given | When | Then |
+| :--- | :--- | :--- |
+| I am a developer | I use Xcode import the project | I can see the main project already set up done, and there is a AppDelegate |
+| I am a developer | I use the command line tool start the mock server | I can see the http server has been started |
+| I am a developer | I use Xcode import the project | I can see the MVVM architecture already set up |
+| I am a developer | I use Xcode import the project | I can see the project tests & project UITests already set up |
+| I am a developer | I use Xcode import the project | I can see the network connectivity already set up |
 
-The layout of your view hierarchy is defined as a series of linear equations. Each constraint represents a single equation. Your goal is to declare a series of equations that has one and only one possible solution.
+## Create the iOS Project
 
-A sample equation is shown below.
+Use `Single View App` and `Storyboard` create the project:
 
-![](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/Art/view_formula_2x.png)
+* __Name__: Mini weibo
+* __Bundle identifier__: com.thoughtworks.miniweibo
+* __Language__: Swift
+* __Target version__: iOS 10.0
 
-This constraint states that the red view’s leading edge must be 8.0 points after the blue view’s trailing edge. Its equation has a number of parts:
+After project created, you can use git init a repository, then add your first commit.
 
-- **Item 1**. The first item in the equation—in this case, the red view. The item must be either a view or a layout guide.
-- **Attribute 1**. The attribute to be constrained on the first item—in this case, the red view’s leading edge.
-- **Relationship**. The relationship between the left and right sides. The relationship can have one of three values: equal, greater than or equal, or less than or equal. In this case, the left and right side are equal.
-- **Multiplier**. The value of attribute 2 is multiplied by this floating point number. In this case, the multiplier is `1.0`.
-- **Item 2**. The second item in the equation—in this case, the blue view. Unlike the first item, this can be left blank.
-- **Attribute 2**. The attribute to be constrained on the second item—in this case, the blue view’s trailing edge. If the second item is left blank, this must be `Not an Attribute`.
-- **Constant**. A constant, floating-point offset—in this case, `8.0`. This value is added to the value of attribute 2.
+> Tips: If you choose xcode to automatically create a git repository, just commit.
 
-Most constraints define a relationship between two items in our user interface. These items can represent either views or layout guides. Constraints can also define the relationship between two different attributes of a single item, for example, setting an aspect ratio between an item’s height and width. You can also assign constant values to an item’s height or width. When working with constant values, the second item is left blank, the second attribute is set to `Not An Attribute`, and the multiplier is set to `0.0`.
+## Create Mock Server
 
-## 4. Working with Constraints in Interface Builder
+Most the mobile app will use the HTTP/HTTPS protocol to communicate with the server, we will setup a mock server to help us do the app develop:
 
-There are three main options for setting up Auto Layout constraints in Interface Builder: You can control-drag between views, you can use the Pin and Align tools, and you can let Interface Builder set up the constraints for you and then edit or modify the results. Each of these approaches has its own set of strengths and weaknesses. I recommend that you learn the first two ways of creating constraints:
+* setup mock server because sometime the server delivery with app at the same time, we can change our app point to local mock server, then you can start the develop/debug.
+* we will setup the functional test for the app, we also need this mock server, it more stable then the real server.
 
-- [Control-Dragging Constraints](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/WorkingwithConstraintsinInterfaceBuidler.html#//apple_ref/doc/uid/TP40010853-CH10-SW1)
-- [Using the Stack, Align, Pin and Resolve Tools](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/WorkingwithConstraintsinInterfaceBuidler.html#//apple_ref/doc/uid/TP40010853-CH10-SW1)
+There are a lot of mock server library, e.g. [mountbank](http://www.mbtest.org/), [nock](https://github.com/nock/nock). in this workshop we choose [json-server](https://github.com/typicode/json-server).
 
-## 5. Practice
+* Create a new group `mock`. and the create a new `Empty` file named package.json in your project.
 
-[Let's put the theory into practice](./demo/AutoLayoutChallenge1)
+<img src="./images/04-mock-npm.png" width=700 />
 
-#### Requirement
+* In terminal, cd to `mock` folder, run command `npm init`, every question you can keep default value.
+* In terminal, run command `npm install json-server` to install node module.
+* In `mock` folder, create new file `db.json`, and add some content.
 
-![](./images/autolayout.gif)
+```json
+{
+  "home_timeline": [
+    {
+      "created_at": "Tue May 31 17:46:55 +0800 2011",
+      "id": 11488058246,
+      "text": "求关注。",
+      "reposts_count": 8,
+      "comments_count": 9,
+      "user": {
+        "id": 1404376560,
+        "screen_name": "zaku",
+        "name": "zaku"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "created_at": "Wed Jun 01 00:50:25 +0800 2011",
+      "id": 12438492184,
+      "text": "love your work.......",
+      "user": {
+        "id": 1404376560,
+        "screen_name": "zaku",
+        "name": "zaku"
+      }
+    }
+  ]
+}
+```
 
-- yellowView.width = 0.5 * redView.width
-- grayView.width = 0.5 * redView.width
-- brownView.width = 50
+* open the package.json file, in `scrips` setion add `start: "json-server --watch db.json"`.
+* In termimal, run command `npm start` to start the mock server.
+* Then you can see the mock server info in terminal:
 
-Other constraints can be decided by yourself.
+<img src="./images/04-mock.png" width=700 />
 
+* Add `node_modules` into `.gitignore`, then add a new git commit.
+<img src="./images/04-gitignore.png" width=700 />
 
+>Tips:
+>* Use google search to setup the Node environment in you local machine.
+>* Use google search to get some HTTP/HTTPS document to read.
 
-## 6. Further Reading
+## Add MVVM Architecture
+
+When build the real application, we can't put every code into one activity class, so we need add the design pattern in our project.
+
+* [Android Architecture Samples](https://github.com/android/architecture-samples)
+  * Switch the branch to "todo-mvp-kotlin".
+  * Other branch show up others android architecture pattern
+* [Model–view–presenter](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93presenter)
+
+Add BaseView.kt and BasePersenter.kt in package `com.thoughtworks.miniweibo`
+And also refactor the MainActivity to:
+
+<img src="./images/04-mvp.png" width=300 />
+
+## Add 3rd Libraries
+
+iOS application usually use the following tools to manage third-party libraries. You can choose a suitable one from below to use.
+
+#### Carthage
+
+[Configure your Carthage](https://github.com/Carthage/Carthage)
+
+#### Cocoapods
+
+[Configure your Cocoapods from homepage](https://cocoapods.org/)  
+[Learn more from Github](https://github.com/CocoaPods/CocoaPods)  
+
+#### _Swift Package Manage(AKA SPM or SwiftPM)_
+
+[Configure your Swift Package Manager from homepage](https://swift.org/getting-started/#using-the-package-manager)  
+[Learn more from Github](https://github.com/apple/swift-package-manager)
+
+## Q&A
+
+- Why should I use Cocoapods, Carthage & SPM? What's wrong with just copy the source code inside my iOS project and use that?”
+- What is the difference between Cocoapods, Carthage, SPM?
+
+## Further Reading
 
 - [Programmatically Creating Constraints](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/ProgrammaticallyCreatingConstraints.html#//apple_ref/doc/uid/TP40010853-CH16-SW1)
 
