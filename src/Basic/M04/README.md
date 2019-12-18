@@ -90,6 +90,7 @@ There are a lot of mock server library, e.g. [mountbank](http://www.mbtest.org/)
 <img src="./images/04-mock.png" width=700 />
 
 * Add `node_modules` into `.gitignore`, then add a new git commit.
+
 <img src="./images/04-gitignore.png" width=700 />
 
 >Tips:
