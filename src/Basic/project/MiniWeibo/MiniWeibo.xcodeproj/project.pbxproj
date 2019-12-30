@@ -16,6 +16,8 @@
 		874CFFF623A9D07F009437CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874CFFF423A9D07F009437CD /* LaunchScreen.storyboard */; };
 		87A09EB923B35EEF0082A5FD /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EB823B35EEF0082A5FD /* HttpRequest.swift */; };
 		87A09EBC23B9959E0082A5FD /* HTTPRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EBB23B9959E0082A5FD /* HTTPRequestTest.swift */; };
+		87A09EC023B9D1DD0082A5FD /* WeiboTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EBE23B9D1DD0082A5FD /* WeiboTableViewCell.swift */; };
+		87A09EC123B9D1DD0082A5FD /* WeiboTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A09EBF23B9D1DD0082A5FD /* WeiboTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		874CFFFC23A9D07F009437CD /* MiniWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A09EB823B35EEF0082A5FD /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
 		87A09EBB23B9959E0082A5FD /* HTTPRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTest.swift; sourceTree = "<group>"; };
+		87A09EBE23B9D1DD0082A5FD /* WeiboTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboTableViewCell.swift; sourceTree = "<group>"; };
+		87A09EBF23B9D1DD0082A5FD /* WeiboTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeiboTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 		874C002123AA24D7009437CD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				87A09EBE23B9D1DD0082A5FD /* WeiboTableViewCell.swift */,
+				87A09EBF23B9D1DD0082A5FD /* WeiboTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A09EC123B9D1DD0082A5FD /* WeiboTableViewCell.xib in Resources */,
 				874CFFF623A9D07F009437CD /* LaunchScreen.storyboard in Resources */,
 				874CFFF323A9D07F009437CD /* Assets.xcassets in Resources */,
 				874CFFF123A9D07D009437CD /* Main.storyboard in Resources */,
@@ -330,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A09EC023B9D1DD0082A5FD /* WeiboTableViewCell.swift in Sources */,
 				874CFFEE23A9D07D009437CD /* ViewController.swift in Sources */,
 				87A09EB923B35EEF0082A5FD /* HttpRequest.swift in Sources */,
 				874CFFEA23A9D07D009437CD /* AppDelegate.swift in Sources */,
