@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+        // set delegate,
+        // Q&A: Why delegate and dataSource uses weak?
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "WeiboTableViewCell", bundle: nil),

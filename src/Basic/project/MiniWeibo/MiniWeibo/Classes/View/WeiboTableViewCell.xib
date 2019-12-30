@@ -225,9 +225,6 @@
                                     <constraint firstAttribute="height" constant="20" id="qfm-vd-26e"/>
                                     <constraint firstAttribute="bottom" secondItem="ljg-iq-G5y" secondAttribute="bottom" id="qkV-xg-5yA"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="c4z-8e-0ON" appends="YES" id="Ktr-em-Sqp"/>
-                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -292,10 +289,5 @@
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="339.50892857142856"/>
         </tableViewCell>
-        <tapGestureRecognizer id="c4z-8e-0ON">
-            <connections>
-                <outlet property="delegate" destination="-1" id="XDY-90-9tc"/>
-            </connections>
-        </tapGestureRecognizer>
     </objects>
 </document>
