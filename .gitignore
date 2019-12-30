@@ -34,3 +34,5 @@ vendor
 
 # CocoaPods noise
 Pods/
+
+node_modules/
