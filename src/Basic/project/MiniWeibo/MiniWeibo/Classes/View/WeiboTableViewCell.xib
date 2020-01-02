@@ -121,6 +121,12 @@
                                     <constraint firstAttribute="width" secondItem="Nz9-wS-FI6" secondAttribute="height" multiplier="1:1" id="Pfh-TG-rKc"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yji-Gf-MkD">
+                                <rect key="frame" x="0.0" y="210" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yji-Gf-MkD" secondAttribute="height" multiplier="1:1" id="EBu-lu-jLG"/>
+                                </constraints>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y3w-or-x3b">
                                 <rect key="frame" x="100" y="210" width="90" height="90"/>
                                 <constraints>
@@ -137,12 +143,6 @@
                                 <rect key="frame" x="-5" y="10" width="217.5" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eOt-HK-52A" secondAttribute="height" multiplier="3:4" id="p43-rR-SOX"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yji-Gf-MkD">
-                                <rect key="frame" x="0.0" y="210" width="90" height="90"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="yji-Gf-MkD" secondAttribute="height" multiplier="1:1" id="EBu-lu-jLG"/>
                                 </constraints>
                             </imageView>
                         </subviews>

@@ -18,6 +18,8 @@
 		87A09EBC23B9959E0082A5FD /* HTTPRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EBB23B9959E0082A5FD /* HTTPRequestTest.swift */; };
 		87A09EC023B9D1DD0082A5FD /* WeiboTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EBE23B9D1DD0082A5FD /* WeiboTableViewCell.swift */; };
 		87A09EC123B9D1DD0082A5FD /* WeiboTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A09EBF23B9D1DD0082A5FD /* WeiboTableViewCell.xib */; };
+		87A09EC423BB32A40082A5FD /* WeiboModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EC323BB32A40082A5FD /* WeiboModel.swift */; };
+		87FBC6D823BB4D9100D6F41F /* UIImageView+url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FBC6D723BB4D9100D6F41F /* UIImageView+url.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		87A09EBB23B9959E0082A5FD /* HTTPRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTest.swift; sourceTree = "<group>"; };
 		87A09EBE23B9D1DD0082A5FD /* WeiboTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboTableViewCell.swift; sourceTree = "<group>"; };
 		87A09EBF23B9D1DD0082A5FD /* WeiboTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeiboTableViewCell.xib; sourceTree = "<group>"; };
+		87A09EC323BB32A40082A5FD /* WeiboModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboModel.swift; sourceTree = "<group>"; };
+		87FBC6D723BB4D9100D6F41F /* UIImageView+url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+url.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		874C001E23AA249B009437CD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				87A09EC223BB327C0082A5FD /* Request */,
 				874C002323AA24E0009437CD /* ViewModel */,
 				874C002223AA24DA009437CD /* Controller */,
 				874C002123AA24D7009437CD /* View */,
@@ -116,6 +121,7 @@
 		874C001F23AA24A1009437CD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				87FBC6D723BB4D9100D6F41F /* UIImageView+url.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -123,7 +129,7 @@
 		874C002023AA24D4009437CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				87A09EB823B35EEF0082A5FD /* HttpRequest.swift */,
+				87A09EC323BB32A40082A5FD /* WeiboModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 		874C002223AA24DA009437CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				874CFFED23A9D07D009437CD /* ViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,7 +185,6 @@
 				874C001F23AA24A1009437CD /* Utils */,
 				874C001E23AA249B009437CD /* Classes */,
 				874CFFE923A9D07D009437CD /* AppDelegate.swift */,
-				874CFFED23A9D07D009437CD /* ViewController.swift */,
 				874CFFEF23A9D07D009437CD /* Main.storyboard */,
 				874CFFF223A9D07F009437CD /* Assets.xcassets */,
 				874CFFF423A9D07F009437CD /* LaunchScreen.storyboard */,
@@ -195,6 +201,14 @@
 				87A09EBB23B9959E0082A5FD /* HTTPRequestTest.swift */,
 			);
 			path = MiniWeiboTests;
+			sourceTree = "<group>";
+		};
+		87A09EC223BB327C0082A5FD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				87A09EB823B35EEF0082A5FD /* HttpRequest.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,9 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87A09EC423BB32A40082A5FD /* WeiboModel.swift in Sources */,
 				87A09EC023B9D1DD0082A5FD /* WeiboTableViewCell.swift in Sources */,
 				874CFFEE23A9D07D009437CD /* ViewController.swift in Sources */,
 				87A09EB923B35EEF0082A5FD /* HttpRequest.swift in Sources */,
+				87FBC6D823BB4D9100D6F41F /* UIImageView+url.swift in Sources */,
 				874CFFEA23A9D07D009437CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,6 +19,13 @@ class HTTPRequestTest: XCTestCase {
         
     }
     
+    func testQueryString() {
+        
+        let paramters = ["key": "value", "key2": "value2"]
+
+        XCTAssertEqual("key=value&key2=value2", paramters.);
+    }
+    
     func testRequest(with path :String) {
         
     }
