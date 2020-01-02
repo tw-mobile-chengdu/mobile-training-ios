@@ -15,11 +15,14 @@
 		874CFFF323A9D07F009437CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874CFFF223A9D07F009437CD /* Assets.xcassets */; };
 		874CFFF623A9D07F009437CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874CFFF423A9D07F009437CD /* LaunchScreen.storyboard */; };
 		87A09EB923B35EEF0082A5FD /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EB823B35EEF0082A5FD /* HttpRequest.swift */; };
-		87A09EBC23B9959E0082A5FD /* HTTPRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EBB23B9959E0082A5FD /* HTTPRequestTest.swift */; };
 		87A09EC023B9D1DD0082A5FD /* WeiboTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EBE23B9D1DD0082A5FD /* WeiboTableViewCell.swift */; };
 		87A09EC123B9D1DD0082A5FD /* WeiboTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A09EBF23B9D1DD0082A5FD /* WeiboTableViewCell.xib */; };
 		87A09EC423BB32A40082A5FD /* WeiboModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EC323BB32A40082A5FD /* WeiboModel.swift */; };
 		87FBC6D823BB4D9100D6F41F /* UIImageView+url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FBC6D723BB4D9100D6F41F /* UIImageView+url.swift */; };
+		87FBC6DB23BD93AF00D6F41F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FBC6DA23BD93AF00D6F41F /* ViewModel.swift */; };
+		87FBC6DD23BDC98F00D6F41F /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FBC6DC23BDC98F00D6F41F /* ViewModelTests.swift */; };
+		87FBC6E323BDDDE900D6F41F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FBC6E123BDDDE800D6F41F /* Nimble.framework */; };
+		87FBC6E423BDDDE900D6F41F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FBC6E223BDDDE900D6F41F /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +59,14 @@
 		874CFFF723A9D07F009437CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		874CFFFC23A9D07F009437CD /* MiniWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87A09EB823B35EEF0082A5FD /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
-		87A09EBB23B9959E0082A5FD /* HTTPRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestTest.swift; sourceTree = "<group>"; };
 		87A09EBE23B9D1DD0082A5FD /* WeiboTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboTableViewCell.swift; sourceTree = "<group>"; };
 		87A09EBF23B9D1DD0082A5FD /* WeiboTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeiboTableViewCell.xib; sourceTree = "<group>"; };
 		87A09EC323BB32A40082A5FD /* WeiboModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboModel.swift; sourceTree = "<group>"; };
 		87FBC6D723BB4D9100D6F41F /* UIImageView+url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+url.swift"; sourceTree = "<group>"; };
+		87FBC6DA23BD93AF00D6F41F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		87FBC6DC23BDC98F00D6F41F /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		87FBC6E123BDDDE800D6F41F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		87FBC6E223BDDDE900D6F41F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87FBC6E323BDDDE900D6F41F /* Nimble.framework in Frameworks */,
+				87FBC6E423BDDDE900D6F41F /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +162,7 @@
 		874C002323AA24E0009437CD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				87FBC6DA23BD93AF00D6F41F /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 				874CFFFF23A9D07F009437CD /* MiniWeiboTests */,
 				874C000A23A9D07F009437CD /* MiniWeiboUITests */,
 				874CFFE723A9D07D009437CD /* Products */,
+				87FBC6E023BDDDE800D6F41F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,8 +207,8 @@
 			isa = PBXGroup;
 			children = (
 				874C000023A9D07F009437CD /* MiniWeiboTests.swift */,
+				87FBC6DC23BDC98F00D6F41F /* ViewModelTests.swift */,
 				874C000223A9D07F009437CD /* Info.plist */,
-				87A09EBB23B9959E0082A5FD /* HTTPRequestTest.swift */,
 			);
 			path = MiniWeiboTests;
 			sourceTree = "<group>";
@@ -209,6 +219,15 @@
 				87A09EB823B35EEF0082A5FD /* HttpRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		87FBC6E023BDDDE800D6F41F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87FBC6E123BDDDE800D6F41F /* Nimble.framework */,
+				87FBC6E223BDDDE900D6F41F /* Quick.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +258,7 @@
 				874CFFE223A9D07D009437CD /* Sources */,
 				874CFFE323A9D07D009437CD /* Frameworks */,
 				874CFFE423A9D07D009437CD /* Resources */,
+				87FBC6DE23BDD7A800D6F41F /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -256,6 +276,7 @@
 				874CFFF823A9D07F009437CD /* Sources */,
 				874CFFF923A9D07F009437CD /* Frameworks */,
 				874CFFFA23A9D07F009437CD /* Resources */,
+				87FBC6DF23BDDA0400D6F41F /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -338,6 +359,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87FBC6DE23BDD7A800D6F41F /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		87FBC6DF23BDDA0400D6F41F /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		874C000323A9D07F009437CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -357,6 +421,7 @@
 				87A09EB923B35EEF0082A5FD /* HttpRequest.swift in Sources */,
 				87FBC6D823BB4D9100D6F41F /* UIImageView+url.swift in Sources */,
 				874CFFEA23A9D07D009437CD /* AppDelegate.swift in Sources */,
+				87FBC6DB23BD93AF00D6F41F /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				874C000123A9D07F009437CD /* MiniWeiboTests.swift in Sources */,
-				87A09EBC23B9959E0082A5FD /* HTTPRequestTest.swift in Sources */,
+				87FBC6DD23BDC98F00D6F41F /* ViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +503,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -498,6 +564,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -560,6 +627,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MiniWeiboTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -581,6 +652,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MiniWeiboTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

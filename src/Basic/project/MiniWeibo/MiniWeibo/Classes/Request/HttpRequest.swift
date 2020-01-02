@@ -73,7 +73,11 @@ class HttpRequest {
         return String(val)
     }
     
-    class func request(with urlString: String, parameters: [String: Any]? = nil, completion: CompletionBlock){
+    init() {
+        
+    }
+    
+    func request(with urlString: String, parameters: [String: Any]? = nil, completion: CompletionBlock){
         
         var urlComponents = URLComponents(string: urlString)!
         urlComponents.queryItems = []
@@ -94,7 +98,7 @@ class HttpRequest {
     }
     
     
-    private class func fetchedDataByDataTask(from request: URLRequest, completion: CompletionBlock){
+    private func fetchedDataByDataTask(from request: URLRequest, completion: CompletionBlock){
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             

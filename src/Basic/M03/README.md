@@ -59,10 +59,17 @@ View controllers go through many stages over their lifetime, and we may need to 
     - viewWillDisappear
     - viewDidDisappear
 
+> Q&A: 
+> - Does `ViewController` call `deinit` after calling `viewDidDisappear`?
+>
+> Tips:
+> - `deinit` is Swift's destructor, as opposed to `init`.
+
 2. Run `UIKitDemo` and click `LifeCycle` button, then forward and back between green and red view controller, there are some lifecycle events log printed in the console.
 
-    - What is the order of printed events?
-    - Is there a relationship between events?
+> Q&A:
+> - What is the order of printed events? 
+> - Is there a relationship between events?
 
 <img src="./images/lifecycle.gif" width=700 />
 
@@ -82,14 +89,14 @@ View controllers go through many stages over their lifetime, and we may need to 
 
 The most common navigation patterns in iOS are：
 
-- Modally present and
+- Modally present and dismiss
  
     ```
     // UIViewController
     func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil)
     ```
 
-- Stack-based push and
+- Stack-based push and pop
 
     ```
     // UINavigationController
@@ -112,15 +119,41 @@ we will practice it in demo, after you finishe to TODOs, think about:
 
 The demo has implement `UIView` as an example, we will practice the left components in the demo.
 
-### delegate, SEL & closure
+### delegate, closure and _SEL_
 
-...
+- The most common way of delegation that's found in Apple's own APIs is by using delegate protocols. Just like how UITableView has a UITableViewDelegate protocol. The delegate pattern has long been very prominent on Apple's platforms.
+
+[About protocol](https://docs.swift.org/swift-book/LanguageGuide/Protocols.html)  
+[Using delegates to customize object behavior](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_delegates_to_customize_object_behavior)
+> Tips:
+> - Practice UITableview.
+> - Customize a delegate, and try passing data using delegate callback.
+>
+> Q&A
+> - What is the difference between a delegate and a protocol?
+
+- Just like functions, closures enable us to define a group of code statements that can be called as one unit, which can both accept input and produce output. The difference, however, is that closures can be defined inline — right at the point where we want to use them — which is incredibly useful in a number of different situations.  
+
+[About closure](https://docs.swift.org/swift-book/LanguageGuide/Closures.html)  
+[Declare a closure](https://fuckingclosuresyntax.com/)
+
+> Q&A:
+> - How to declare a closure in Swift?
+>
+> Tips:
+> - Try passing data using closure callback.
 
 ### runtime, KVO & KVC
 
 Objective-C is a dynamic language, which means it needs not only a compiler, but also a runtime system to dynamically create classes and objects, deliver messages and forward them. Understanding the runtime mechanism of Objective-C can help us better understand the language, and extend the language when appropriate, so as to solve some design or technical problems in the project from the system level.
 
 <img src="./images/runtime.png" width=400 />
+
+- [Using Key-Value Observing in Swift](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift)
+
+
+
+
 
 ## Further reading
 

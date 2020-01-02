@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    var viewModel: ViewModel = ViewModel(HttpRequest())
     var dataSource: [WeiboModel] = []
     
     override func viewDidLoad() {
@@ -22,28 +23,13 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "WeiboTableViewCell", bundle: nil),
                            forCellReuseIdentifier: "WeiboTableViewCell")
-        requestData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
     
-    private func requestData() {
-        HttpRequest.request(with: "http://localhost:3000/home") { [weak self] (data) in
-            do {
-                let decoder = JSONDecoder()
-                let res = try decoder.decode(WeiboResponse.self, from: data)
-                guard let models = res.data else { return }
-                self?.dataSource = models
-                DispatchQueue.main.async {
-                    self?.tableView.reloadData()
-                }
-            }catch let e {
-                print(e.localizedDescription)
-            }
-        }
-    }
+    
 
 
 }

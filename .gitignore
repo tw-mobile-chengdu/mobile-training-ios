@@ -35,4 +35,7 @@ vendor
 # CocoaPods noise
 Pods/
 
+# Carthage
+Carthage/
+
 node_modules/

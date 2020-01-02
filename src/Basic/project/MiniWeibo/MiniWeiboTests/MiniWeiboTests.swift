@@ -7,9 +7,12 @@
 //
 
 import XCTest
+import Quick
+import Nimble
+
 @testable import MiniWeibo
 
-class MiniWeiboTests: XCTestCase {
+class MiniWeiboTests: QuickSpec {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -62,6 +65,17 @@ class MiniWeiboTests: XCTestCase {
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.
+        }
+    }
+    
+    func testOneNameValuePair_quick() {
+        describe("testOneNameValuePair_quick") {
+            
+            var qs: HttpRequest!
+            beforeEach {
+                qs = try! HttpRequest("name=value")
+            }
+            
         }
     }
 
