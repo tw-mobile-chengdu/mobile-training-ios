@@ -23,14 +23,35 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "WeiboTableViewCell", bundle: nil),
                            forCellReuseIdentifier: "WeiboTableViewCell")
+        setupViewModel()
+    }
+    
+    private func setupViewModel() {
+        viewModel.didUpdateWeibo = { [weak self] data in
+            self?.dataSource = data
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+        
+        viewModel.isRefreshing = { refreshing in
+            DispatchQueue.main.async {
+                UIApplication.shared.isNetworkActivityIndicatorVisible = refreshing
+            }
+        }
+        
+        viewModel.didSelecteWeibo = { [weak self] ip in
+            DispatchQueue.main.async {
+                let vc = UIViewController()
+                self?.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        viewModel.refreshData()
     }
-    
-    
-
 
 }
 

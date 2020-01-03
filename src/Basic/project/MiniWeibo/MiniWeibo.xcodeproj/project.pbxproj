@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		872EE06723BED88000B3E31E /* Error+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872EE06623BED88000B3E31E /* Error+App.swift */; };
 		874C000123A9D07F009437CD /* MiniWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C000023A9D07F009437CD /* MiniWeiboTests.swift */; };
 		874C000C23A9D07F009437CD /* MiniWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C000B23A9D07F009437CD /* MiniWeiboUITests.swift */; };
 		874CFFEA23A9D07D009437CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CFFE923A9D07D009437CD /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		872EE06623BED88000B3E31E /* Error+App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+App.swift"; sourceTree = "<group>"; };
 		874C000023A9D07F009437CD /* MiniWeiboTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniWeiboTests.swift; sourceTree = "<group>"; };
 		874C000223A9D07F009437CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		874C000723A9D07F009437CD /* MiniWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				87FBC6D723BB4D9100D6F41F /* UIImageView+url.swift */,
+				872EE06623BED88000B3E31E /* Error+App.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872EE06723BED88000B3E31E /* Error+App.swift in Sources */,
 				87A09EC423BB32A40082A5FD /* WeiboModel.swift in Sources */,
 				87A09EC023B9D1DD0082A5FD /* WeiboTableViewCell.swift in Sources */,
 				874CFFEE23A9D07D009437CD /* ViewController.swift in Sources */,

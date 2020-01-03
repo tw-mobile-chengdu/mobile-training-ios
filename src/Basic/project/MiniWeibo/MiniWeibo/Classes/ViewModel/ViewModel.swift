@@ -10,9 +10,11 @@ import UIKit
 
 class ViewModel {
     
+    var service: HttpRequest
+    
     // Outputs
     var isRefreshing: ((Bool) -> Void)?
-    var didSelecteWeibo: ((Int) -> Void)?
+    var didSelecteWeibo: ((WeiboModel) -> Void)?
     var didUpdateWeibo:(([WeiboModel]) -> Void)?
     
     private(set) var dataSource: [WeiboModel] = [WeiboModel]() {
@@ -21,24 +23,22 @@ class ViewModel {
         }
     }
     
+    init(_ service: HttpRequest = HttpRequest()) {
+        self.service = service
+    }
+    
     // Inputs
-    func ready() {
+    func refreshData() {
         isRefreshing?(true)
         service.request(with: "http://localhost:3000/home") { [weak self] data in
             guard let `self` = self else { return }
-            self.isRefreshing?(false)
+            self.finishRequest(with: data)
         }
     }
     
     func didSelectRow(at indexPath: IndexPath) {
         if dataSource.isEmpty { return }
-        didSelecteWeibo?( dataSource[indexPath.row].id )
-    }
-    
-    var service: HttpRequest
-    
-    init(_ service: HttpRequest = HttpRequest()) {
-        self.service = service
+        didSelecteWeibo?( dataSource[indexPath.row] )
     }
     
     // request finished

@@ -8,39 +8,6 @@
 
 import UIKit
 
-enum AppError: Error {
-    
-    case normal
-    
-    func info(_ info: String) -> AppError {
-        switch info {
-        case "normal":
-            return .normal
-        default:
-            return .normal
-        }
-    }
-}
-
-extension AppError: LocalizedError {
-    var localizedDescription: String {
-        return "App Error."
-    }
-}
-
-extension Dictionary where Key: Hashable {
-    
-    var queryString: String {
-        get {
-            var query = ""
-            for (key, value) in self {
-                query = "\(key)=\(value)"
-            }
-            return query
-        }
-    }
-}
-
 class HttpRequest {
     
     var query: String?

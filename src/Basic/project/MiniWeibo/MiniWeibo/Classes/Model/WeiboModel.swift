@@ -20,6 +20,7 @@ struct WeiboModel: Decodable {
     var id: Int = 0
     var content: String?
     var reposts_count: Int = 0
+    var is_vip: Bool = false
     var comments_count: Int = 0
     var tags: [String]?
     var follow_count: Int = 0
