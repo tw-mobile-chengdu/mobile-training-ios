@@ -1,0 +1,14 @@
+{
+    "name": "mock",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "json-server --watch db.json --routes routes.json"
+    },
+    "author": "tw",
+    "license": "ISC",
+    "dependencies": {
+        "json-server": "^0.15.1"
+    }
+}
