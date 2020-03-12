@@ -46,8 +46,8 @@ There are a lot of mock server library, e.g. [mountbank](http://www.mbtest.org/)
 }
 ```
 
-* open the package.json file, in `scrips` setion add `start: "json-server --watch db.json"`.
-* In termimal, run command `npm start` to start the mock server.
+* open the package.json file, in `scrips` section add `start: "json-server --watch db.json"`.
+* In terminal, run command `npm start` to start the mock server.
 * Then you can see the mock server info in terminal:
 
 <img src="./images/04-mock.png" width=700 />
