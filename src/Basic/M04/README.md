@@ -74,6 +74,17 @@ iOS application usually use the following tools to manage third-party libraries.
 - Why should I use Cocoapods, Carthage & SPM? What's wrong with just copy the source code inside my iOS project and use that?”
 - What is the difference between Cocoapods, Carthage, SPM?
 
+
+## Network
+
+In this session demo, we use the URLSession to send the HTTP request. You can also use 3rd part library like [Alamofire](https://github.com/Alamofire/Alamofire), which is using abstract away access to URLSession.
+
+The URLSession demo code you can refer [HttpRequest](https://github.com/tw-mobile-chengdu/mobile-training-ios/blob/master/src/Basic/project/MiniWeibo/MiniWeibo/Classes/Request/HttpRequest.swift).
+
+## Testing
+
+For iOS unit test, apple provide us the framework called [XCTest](https://developer.apple.com/documentation/xctest), in the most project we use behavior-driven development framework like [Quick](https://github.com/Quick/Quick) and use [Nimble](https://github.com/Quick/Nimble) as our test matcher.
+
 ## Further Reading
 
 - [Programmatically Creating Constraints](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/ProgrammaticallyCreatingConstraints.html#//apple_ref/doc/uid/TP40010853-CH16-SW1)
