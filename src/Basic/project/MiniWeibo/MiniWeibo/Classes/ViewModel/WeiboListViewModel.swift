@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewModel {
+class WeiboListViewModel {
     
     var service: HttpRequest
     

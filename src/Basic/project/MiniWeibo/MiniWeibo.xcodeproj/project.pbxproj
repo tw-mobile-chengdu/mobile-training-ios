@@ -11,7 +11,7 @@
 		874C000123A9D07F009437CD /* MiniWeiboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C000023A9D07F009437CD /* MiniWeiboTests.swift */; };
 		874C000C23A9D07F009437CD /* MiniWeiboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874C000B23A9D07F009437CD /* MiniWeiboUITests.swift */; };
 		874CFFEA23A9D07D009437CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CFFE923A9D07D009437CD /* AppDelegate.swift */; };
-		874CFFEE23A9D07D009437CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CFFED23A9D07D009437CD /* ViewController.swift */; };
+		874CFFEE23A9D07D009437CD /* WeiboListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874CFFED23A9D07D009437CD /* WeiboListController.swift */; };
 		874CFFF123A9D07D009437CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874CFFEF23A9D07D009437CD /* Main.storyboard */; };
 		874CFFF323A9D07F009437CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874CFFF223A9D07F009437CD /* Assets.xcassets */; };
 		874CFFF623A9D07F009437CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874CFFF423A9D07F009437CD /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		87A09EC123B9D1DD0082A5FD /* WeiboTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A09EBF23B9D1DD0082A5FD /* WeiboTableViewCell.xib */; };
 		87A09EC423BB32A40082A5FD /* WeiboModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A09EC323BB32A40082A5FD /* WeiboModel.swift */; };
 		87FBC6D823BB4D9100D6F41F /* UIImageView+url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FBC6D723BB4D9100D6F41F /* UIImageView+url.swift */; };
-		87FBC6DB23BD93AF00D6F41F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FBC6DA23BD93AF00D6F41F /* ViewModel.swift */; };
+		87FBC6DB23BD93AF00D6F41F /* WeiboListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FBC6DA23BD93AF00D6F41F /* WeiboListViewModel.swift */; };
 		87FBC6DD23BDC98F00D6F41F /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FBC6DC23BDC98F00D6F41F /* ViewModelTests.swift */; };
 		87FBC6E323BDDDE900D6F41F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FBC6E123BDDDE800D6F41F /* Nimble.framework */; };
 		87FBC6E423BDDDE900D6F41F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FBC6E223BDDDE900D6F41F /* Quick.framework */; };
@@ -54,7 +54,7 @@
 		874C001D23A9FDF1009437CD /* db.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = db.json; sourceTree = "<group>"; };
 		874CFFE623A9D07D009437CD /* MiniWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		874CFFE923A9D07D009437CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		874CFFED23A9D07D009437CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		874CFFED23A9D07D009437CD /* WeiboListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboListController.swift; sourceTree = "<group>"; };
 		874CFFF023A9D07D009437CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		874CFFF223A9D07F009437CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		874CFFF523A9D07F009437CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		87A09EBF23B9D1DD0082A5FD /* WeiboTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeiboTableViewCell.xib; sourceTree = "<group>"; };
 		87A09EC323BB32A40082A5FD /* WeiboModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboModel.swift; sourceTree = "<group>"; };
 		87FBC6D723BB4D9100D6F41F /* UIImageView+url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+url.swift"; sourceTree = "<group>"; };
-		87FBC6DA23BD93AF00D6F41F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		87FBC6DA23BD93AF00D6F41F /* WeiboListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboListViewModel.swift; sourceTree = "<group>"; };
 		87FBC6DC23BDC98F00D6F41F /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		87FBC6E123BDDDE800D6F41F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		87FBC6E223BDDDE900D6F41F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		874C002223AA24DA009437CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				874CFFED23A9D07D009437CD /* ViewController.swift */,
+				874CFFED23A9D07D009437CD /* WeiboListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,7 +165,7 @@
 		874C002323AA24E0009437CD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				87FBC6DA23BD93AF00D6F41F /* ViewModel.swift */,
+				87FBC6DA23BD93AF00D6F41F /* WeiboListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -421,11 +421,11 @@
 				872EE06723BED88000B3E31E /* Error+App.swift in Sources */,
 				87A09EC423BB32A40082A5FD /* WeiboModel.swift in Sources */,
 				87A09EC023B9D1DD0082A5FD /* WeiboTableViewCell.swift in Sources */,
-				874CFFEE23A9D07D009437CD /* ViewController.swift in Sources */,
+				874CFFEE23A9D07D009437CD /* WeiboListController.swift in Sources */,
 				87A09EB923B35EEF0082A5FD /* HttpRequest.swift in Sources */,
 				87FBC6D823BB4D9100D6F41F /* UIImageView+url.swift in Sources */,
 				874CFFEA23A9D07D009437CD /* AppDelegate.swift in Sources */,
-				87FBC6DB23BD93AF00D6F41F /* ViewModel.swift in Sources */,
+				87FBC6DB23BD93AF00D6F41F /* WeiboListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

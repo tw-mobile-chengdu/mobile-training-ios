@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WeiboListController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var viewModel: ViewModel = ViewModel(HttpRequest())
+    var viewModel: WeiboListViewModel = WeiboListViewModel(HttpRequest())
     var dataSource: [WeiboModel] = []
     
     override func viewDidLoad() {
@@ -55,11 +55,11 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDelegate {
+extension WeiboListController: UITableViewDelegate {
     
 }
 
-extension ViewController: UITableViewDataSource {
+extension WeiboListController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count

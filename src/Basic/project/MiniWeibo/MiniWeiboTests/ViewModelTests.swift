@@ -23,7 +23,7 @@ class ViewModelTests: QuickSpec {
             
             context("About the input and the output") {
                 it("should have correct output for input") {
-                    let viewModel = ViewModel(HttpRequest())
+                    let viewModel = WeiboListViewModel(HttpRequest())
                     
                     // data source
                     expect(viewModel.dataSource).notTo(beNil())
