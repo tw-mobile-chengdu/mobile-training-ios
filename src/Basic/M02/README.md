@@ -25,6 +25,6 @@ If you want to write code ASAP instead of reading the looooong doc first, starti
 4. [Challenge Four](./demo/LearnSwiftChallenge4.playground)
 
    
-
+## 3. You can download the "Swift Playgrounds" from App Store.
 ## Congratulations!
 

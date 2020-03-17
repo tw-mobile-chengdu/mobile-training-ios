@@ -1,0 +1,4 @@
+{
+    "/api/*": "/$1",
+    "/images/:resource": "/assets/images/:resource"
+}
