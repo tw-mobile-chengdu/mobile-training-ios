@@ -15,6 +15,7 @@ class WeiboListController: UIViewController {
     var viewModel: WeiboListViewModel = WeiboListViewModel(HttpRequest())
     var dataSource: [WeiboModel] = []
     var selectedCellClosure : ((IndexPath) -> Void)?
+    var selectedWeibo: WeiboModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,8 @@ class WeiboListController: UIViewController {
         
         viewModel.didSelecteWeibo = { [weak self] ip in
             DispatchQueue.main.async {
-                let vc = WeiboDetailController()
+                let viewModel = WeiboDetailViewModel(ip)
+                let vc = WeiboDetailController.instance(viewModel)
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         }
