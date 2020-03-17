@@ -24,6 +24,9 @@
 		87FBC6DD23BDC98F00D6F41F /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FBC6DC23BDC98F00D6F41F /* ViewModelTests.swift */; };
 		87FBC6E323BDDDE900D6F41F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FBC6E123BDDDE800D6F41F /* Nimble.framework */; };
 		87FBC6E423BDDDE900D6F41F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FBC6E223BDDDE900D6F41F /* Quick.framework */; };
+		9D6093492420A33100957CF6 /* WeiboDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6093482420A33100957CF6 /* WeiboDetailController.swift */; };
+		9D60934B2420A38200957CF6 /* WeiboDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60934A2420A38200957CF6 /* WeiboDetailViewModel.swift */; };
+		9D60934D2420A49F00957CF6 /* WeiboDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D60934C2420A49F00957CF6 /* WeiboDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		87FBC6DC23BDC98F00D6F41F /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		87FBC6E123BDDDE800D6F41F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		87FBC6E223BDDDE900D6F41F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		9D6093482420A33100957CF6 /* WeiboDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailController.swift; sourceTree = "<group>"; };
+		9D60934A2420A38200957CF6 /* WeiboDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailViewModel.swift; sourceTree = "<group>"; };
+		9D60934C2420A49F00957CF6 /* WeiboDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboDetailModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				87A09EC323BB32A40082A5FD /* WeiboModel.swift */,
+				9D60934C2420A49F00957CF6 /* WeiboDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				874CFFED23A9D07D009437CD /* WeiboListController.swift */,
+				9D6093482420A33100957CF6 /* WeiboDetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				87FBC6DA23BD93AF00D6F41F /* WeiboListViewModel.swift */,
+				9D60934A2420A38200957CF6 /* WeiboDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -419,8 +428,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				872EE06723BED88000B3E31E /* Error+App.swift in Sources */,
+				9D6093492420A33100957CF6 /* WeiboDetailController.swift in Sources */,
 				87A09EC423BB32A40082A5FD /* WeiboModel.swift in Sources */,
+				9D60934D2420A49F00957CF6 /* WeiboDetailModel.swift in Sources */,
 				87A09EC023B9D1DD0082A5FD /* WeiboTableViewCell.swift in Sources */,
+				9D60934B2420A38200957CF6 /* WeiboDetailViewModel.swift in Sources */,
 				874CFFEE23A9D07D009437CD /* WeiboListController.swift in Sources */,
 				87A09EB923B35EEF0082A5FD /* HttpRequest.swift in Sources */,
 				87FBC6D823BB4D9100D6F41F /* UIImageView+url.swift in Sources */,

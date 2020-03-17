@@ -14,6 +14,7 @@ class WeiboListController: UIViewController {
     
     var viewModel: WeiboListViewModel = WeiboListViewModel(HttpRequest())
     var dataSource: [WeiboModel] = []
+    var selectedCellClosure : ((IndexPath) -> Void)?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +24,7 @@ class WeiboListController: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "WeiboTableViewCell", bundle: nil),
                            forCellReuseIdentifier: "WeiboTableViewCell")
+        self.selectedCellClosure = selectedCell
         setupViewModel()
     }
     
@@ -42,10 +44,14 @@ class WeiboListController: UIViewController {
         
         viewModel.didSelecteWeibo = { [weak self] ip in
             DispatchQueue.main.async {
-                let vc = UIViewController()
+                let vc = WeiboDetailController()
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
         }
+    }
+    
+    private func selectedCell(indexPath: IndexPath) {
+        viewModel.didSelectRow(at: indexPath)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,7 +62,12 @@ class WeiboListController: UIViewController {
 }
 
 extension WeiboListController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectedCellClosure = selectedCellClosure else {
+            return
+        }
+        selectedCellClosure(indexPath)
+    }
 }
 
 extension WeiboListController: UITableViewDataSource {
