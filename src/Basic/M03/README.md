@@ -9,6 +9,7 @@ In this session, we will learn about:
 - Commonly used components
 - `delegate`, `SEL` & `closure`
 - `runtime`, `KVO`, `KVC`
+- App Store environment
 
 ## The iOS system structure
 
