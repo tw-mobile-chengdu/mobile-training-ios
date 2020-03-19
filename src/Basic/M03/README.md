@@ -9,6 +9,7 @@ In this session, we will learn about:
 - Commonly used components
 - `delegate`, `SEL` & `closure`
 - `runtime`, `KVO`, `KVC`
+- App Store environment
 
 ## The iOS system structure
 
@@ -82,8 +83,9 @@ View controllers go through many stages over their lifetime, and we may need to 
 - UIImageView
 - UINavigationController
 - UITabBarController
+ ... 
 
- ...
+See more details at [Human Interface Guidelines - Views](https://developer.apple.com/design/human-interface-guidelines/ios/) and [Human Interface Guidelines - Controls](https://developer.apple.com/design/human-interface-guidelines/ios/controls/buttons/)
 
 #### UINavigationController
 
@@ -151,11 +153,11 @@ Objective-C is a dynamic language, which means it needs not only a compiler, but
 
 - [Using Key-Value Observing in Swift](https://developer.apple.com/documentation/swift/cocoa_design_patterns/using_key-value_observing_in_swift)
 
-
-
-
-
 ## Further reading
 
 - [View Controller Programming Guide for iOS](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html)
 - [Using Responders and the Responder Chain to Handle Events](https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events)
+- [Human Interface Guidelines for iOS](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+- [App Store Support](https://developer.apple.com/support/app-store/)
+- [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+- [App Store Review Guidelines History](https://www.appstorereviewguidelineshistory.com)
