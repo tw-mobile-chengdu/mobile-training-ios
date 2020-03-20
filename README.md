@@ -46,8 +46,8 @@ This is an iOS training for different stage of people. The goal is to let people
 | [M02: Intro to Swift](./src/Basic/M02) | Basic knowledge of the iOS programming language |
 | [M03: Intro to iOS](./src/Basic/M03) | View, Label, Button, Image, TextField, System Structure |
 | [M04: Weibo Workshop Preparation](./src/Basic/M04) | Init project, Package manager, Mock |
-| [M04: Weibo Workshop Story One](./src/Basic/M05) | Navigation |
-| [M04: Weibo Workshop Story Two](./src/Basic/M06) | Weibo list and detail page |
+| [M05: Weibo Workshop Story One](./src/Basic/M05) | Navigation |
+| [M06: Weibo Workshop Story Two](./src/Basic/M06) | Weibo list and detail page |
 
 <!--Parameters-->
 <!--Blue-->
