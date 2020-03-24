@@ -18,6 +18,8 @@ In this mini weibo app, we have two pages. we will create them first.
 | As a app users | I launch app from device | I can see the post list page |
 | As a app users | I click one of the weibo item | I will navigate to weibo detail page |
 
+<img src="./images/05-home-timeline.png" width=700 />
+
 #### Navigation
 
 In [iOS human interface guide](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/navigation/), we already know the iOS has three main style of navigation:
