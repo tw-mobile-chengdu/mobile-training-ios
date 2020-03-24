@@ -28,10 +28,6 @@ This is an iOS training for different stage of people. The goal is to let people
 
     ***Note:** Run `pod repo update` after you install the Cocoapods for this take a long time to update*
 
-- Clone this repo 
-  
-  - [https://github.com/tw-xian-consumer-mobile/mobile-training-ios.git](https://github.com/tw-xian-consumer-mobile/mobile-training-ios.git)
-
 ## Sessions
 
 ![#2d5df0][#2d5df0]&nbsp;&nbsp;The `Basic` sessions are for beginner.
