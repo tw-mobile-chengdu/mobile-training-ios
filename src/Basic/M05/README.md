@@ -1,52 +1,51 @@
-# Debugging
+# Weibo Workshop Story One
 
-Debugging is something really important on all platforms and need to keep learning. Xcode provide bunch of tools to debugging. Eg. Breakpoints, Variable views, Callstack, Debugging console, Memory Graph and so on.
+## Story
 
-## Breakpoints
+#### Context
 
-Breakpoints are some points app will stop running. And show the current state of the application. It's the most useful tool and used widely when we debug the app.
+In this mini weibo app, we have two pages. we will create them first.
 
-You can `add`, `deactive`, `active` and `remove` a breakpoint.
+#### Scope
 
-<img src="./images/00-debug-breakpoints.gif" width=700 />
+* Create empty post list and detail page.
+* list page can jump to detail page.
 
-You can see the thing you want in following debug area. You can also ask the console to help you print some value of the variables you are intersted in.
+#### Acceptance Criteria
 
-<img src="./images/01-debug-stopped-in-breakpoint.png" width=700 />
-<img src="./images/02-debug-print-variable-in-debug-log.gif" width=300 />
+| Given | When | Then |
+| :--- | :--- | :--- |
+| As a app users | I launch app from device | I can see the post list page |
+| As a app users | I click one of the weibo item | I will navigate to weibo detail page |
 
-## Callstack
+#### Navigation
 
-The callstack is the the stack the method you add breakpoint is called from. It looks like the following image.
+In [iOS human interface guide](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/navigation/), we already know the iOS has three main style of navigation:
 
-<img src="./images/03-debug-callstack.png" width=700 />
+* Hierarchical Navigation
+* Flat Navigation
+* Content-Driven or Experience-Driven Navigation
 
-You can click every row in this stack, and see the related variables. And also you will know who call this method and why it is called.
+iOS provide the [Action Sheets](https://developer.apple.com/design/human-interface-guidelines/ios/views/action-sheets/), [Alerts](https://developer.apple.com/design/human-interface-guidelines/ios/views/alerts/), [Popovers](https://developer.apple.com/design/human-interface-guidelines/ios/views/popovers/), and [Modality](https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/) to make the app has a clear path to navigate, and provide the [Navigation Bars](https://developer.apple.com/design/human-interface-guidelines/ios/bars/navigation-bars/), [Tab Bars](https://developer.apple.com/design/human-interface-guidelines/ios/bars/tab-bars/) and [Page Controls](https://developer.apple.com/design/human-interface-guidelines/ios/controls/page-controls/) to organize the navigation.
 
-## Visual debugging
+Read first:
+* [UINavigationController](https://developer.apple.com/documentation/uikit/uinavigationcontroller)
+Key: navigation stack, pushViewController, popViewController
+* [Presentations and Transitions -> Presenting a View Controller](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/PresentingaViewController.html)
+Key: showViewController, showDetailViewController
+* [Presentations and Transitions -> Using Segues](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/UsingSegues.html)
 
-When you are fixing the layout issue. You can use the integrated tools in Xcode, when your app is running and on the page you want to see the view hierarchy, you can press this key.
+#### UITableView
 
-<img src="./images/04-debug-view-hierarchy.png" width=300 />
+iOS provide the [UITableView](https://developer.apple.com/documentation/uikit/uitableview) to help develop display a single column of vertically scrolling content, divided into rows. UITableView manages the basic appearance of the table, but your app provides the cells ([UITableViewCell](https://developer.apple.com/documentation/uikit/uitableviewcell) objects) that display the actual content.
 
-Then you should see the view hierarchy like following image, and then you can see the detail of the page hierarhcy.
+* Managing Interactions with the Table, [UITableViewDelegate](https://developer.apple.com/documentation/uikit/uitableviewdelegate)
+* Providing the Table's Data and Cells, [UITableViewDataSource](https://developer.apple.com/documentation/uikit/uitableviewdatasource)
 
-<img src="./images/06-debug-view-hierarchy-2.png" width=700 />
+#### UICollectionView
 
-## Memory Graph
+iOS provide the [UICollectionView](https://developer.apple.com/documentation/uikit/uicollectionview) to manages an ordered collection of data items and presents them using customizable layouts, e.g. A collection view using the flow layout.
 
-The last tool is the memory graph, this is a tool to debug the memory usage and retain cycle. And it looks like the following image.
-
-<img src="./images/07-debug-memory-graph.png" width=1000 />
-
-## Reference
-
-Debugging with XCode
-* https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/debugging_tools.html#//apple_ref/doc/uid/TP40015022-CH8-SW7
-
-Advanced Debugging
-* https://developer.apple.com/videos/play/wwdc2018/412
-
-Visual Debugging with Xcode
-* https://developer.apple.com/videos/play/wwdc2016/410/
-* https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/special_debugging_workflows.html
+* Providing the Collection View Data, [UICollectionViewDataSource](https://developer.apple.com/documentation/uikit/uicollectionviewdatasource)
+* Changing the Layout, [UICollectionViewLayout](https://developer.apple.com/documentation/uikit/uicollectionviewlayout)
+* Managing Collection View Interactions, [UICollectionViewDelegate](https://developer.apple.com/documentation/uikit/uicollectionviewdelegate)
